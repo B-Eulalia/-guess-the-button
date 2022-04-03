@@ -3,7 +3,7 @@ function random() {
 }
 let randomButton = random();
 function button(id) {
-          if(randomButton == id) {
+          if (randomButton == id) {
                     document.getElementById("display").innerHTML = "Congratulations!!! You are the winner!";
           } else {
           document.getElementById("display").innerHTML = "Sorry! You have to try again!";
