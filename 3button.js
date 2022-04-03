@@ -1,8 +1,11 @@
 function random() {
-          var number =  document.getElementById("1").innerHTML = Math.floor(Math.random() * 3);
-          if(number == 1){
-                    document.write("<h1>Congratulations!!! You are the winner!</h1>");
+          return Math.floor(Math.random() * (3 + 1));
+}
+let randomButton = random();
+function button(id) {
+          if(randomButton == id) {
+                    document.getElementById("display").innerHTML = "Congratulations!!! You are the winner!";
           } else {
-                    document.write("<h1>Sorry! You have to try again!</h1>");
-           }
+          document.getElementById("display").innerHTML = "Sorry! You have to try again!";
+          }
 }
